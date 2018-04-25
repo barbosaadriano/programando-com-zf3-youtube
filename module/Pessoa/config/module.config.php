@@ -25,7 +25,7 @@ return [
 	],
 	'controllers' => [
 		'factories' => [
-			Controller\PessoaController::class => InvokableFactory::class,
+//			Controller\PessoaController::class => InvokableFactory::class,
 		],
 	],
 	'view_manager' => [
