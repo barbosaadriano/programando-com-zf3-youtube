@@ -3,13 +3,12 @@ namespace Pessoa\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Model\PessoaTable;
 
 class PessoaController extends AbstractActionController {
 
 	private $table;
 
-	public function __contruct($table) {
+	public function __construct($table) {
 		$this->table = $table;
 	}
 

@@ -4,7 +4,7 @@ namespace Pessoa\Model;
 use Zend\Db\TableGateway\TableGatewayInterface;
 use RuntimeException;
 
-public class PessoaTable {
+class PessoaTable {
 
 	private $tableGateway;
 

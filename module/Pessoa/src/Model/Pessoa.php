@@ -2,7 +2,7 @@
 
 namespace Pessoa\Model;
 
-public class Pessoa {
+class Pessoa {
 
 	private $id;
 	private $nome;

@@ -6,7 +6,7 @@ use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\Db\Adapter\AdapterInterface;
 use Zend\Db\ResultSet\ResultSet;
 use Zend\Db\TableGateway\TableGateway;
-use Pesso\Controller\PessoaController;
+use Pessoa\Controller\PessoaController;
 
 
 class Module implements ConfigProviderInterface {
