@@ -1,7 +1,21 @@
-<?php
-
-	$minhaVar = "Adriano";
-	var_dump($pessoas);
+<?php	
+	
 ?>
-<H1>Minha view do controller pessoa do módulo pessoa</H1>
-<p><?=$minhaVar?></p>
+<H1>Lista de pessoas</H1>
+<table class="table table-stripped">
+	<tr>
+		<th>Código</th>
+		<th>Nome</th>
+	</tr>
+<?php 
+		
+		foreach ($pessoas as $pes) :
+		?>
+			<tr>
+				<td><?=$pes->getId()?></td>
+				<td><?=$pes->getNome()?></td>
+			</tr>
+		<?php	
+		endforeach;
+?>
+</table>
