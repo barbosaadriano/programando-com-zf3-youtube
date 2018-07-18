@@ -1,10 +1,10 @@
 <?php
-$title = "Adicionando nova pessoa";
+$title = "Editando pessoa";
 $this->headTitle($title);
 ?>
 <h1><?=$this->escapeHtml($title)?></h1>
 <?php
-$form->setAttribute('action',$this->url('pessoa',['action'=>'adicionar']));
+$form->setAttribute('action',$this->url('pessoa',['action'=>'editar','id'=>$id]));
 $form->prepare();
 
 echo $this->form()->openTag($form);

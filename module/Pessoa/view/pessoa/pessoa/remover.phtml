@@ -1,0 +1,15 @@
+<?php
+$title = "Remover pessoa";
+$this->headTitle($title);
+?>
+<h1><?=$this->escapeHtml($title)?></h1>
+<p>
+    Você deseja realmente excluir "<?=$this->escapeHtml($pessoa->getNome())?>"?
+</p>
+<form method="post" action="<?=$this->url('pessoa',['action'=>'remover','id'=>$id])?>">
+    <div class="form-group">
+        <input type="hidden" name="id" value="<?=$id?>">
+        <input type="submit" class="btn btn-danger" name="del" value="Sim">
+        <input type="submit" class="btn btn-success btn-lg" name="del" value="Não">
+    </div>
+</form>
