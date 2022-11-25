@@ -11,11 +11,16 @@
  * This should be an array of module namespaces used in the application.
  */
 return [
-    'Zend\I18n',
-    'Zend\Form',
-    'Zend\Router',
-    'Zend\Validator',
-    'Zend\Db',
+    'Laminas\Mvc\I18n',
+    'Laminas\I18n',
+    'Laminas\Router',
+    'Laminas\Form',
+    'Laminas\Hydrator',
+    'Laminas\InputFilter',
+    'Laminas\Filter',
+    'Laminas\Validator',
+    'Laminas\Db',
+    'Laminas\ZendFrameworkBridge',
     'Application',
     'Pessoa',
 ];
